@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;/*开启弹性盒子布局*/
+            flex-flow: column;/*纵向方向排列*/
+            justify-content: center;//*项目横向居中排列*/
+            align-items: center;/*项目纵向居中排列*/
+            padding: 0;
+            margin: 0;
+			background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+        }
+		.top {
+			border: 1px solid red;
+			width: 95%;
+			height: 40px;
+			margin: 0 auto;
+		}
+		.top a{
+			text-decoration: none;
+			text-align: center;
+			color:black;
+			padding: 6px 10px 4px;
+			border: 1px solid #a7bfe8;
+			margin: 0 auto;
+			height: 30px;
+			width: 100px;
+			display:block;
+			float: left;
+		}
+		.top a+a{
+			margin-left: 25px;
+		}
+		.top a:hover{
+			color: white;background-color: #930;
+		}
+		#jiang{
+			height: 30px;
+			width: 100px;
+			display:block;
+			float:right;
+			border: 1px solid #a7bfe8;
+			margin: 0 auto;
+			text-align:center;
+			padding-top: 7px; 
+			
+		}
+		.zhongjian{
+			display: flex;
+			flex-flow:row;/*横向排列*/
+		}
+        .left{/*左边盒子布局*/
+            width: 200px;
+            height: 500px;
+			border: 1px solid red;
+			margin-top: 30px;
+			margin-left: 7.5%;
+			margin-right:100px;
+			padding-left: 10px;
+			padding-right: 10px;
+        }
+        nav{
+            margin-top: 150px;
+            height: 160px;
+        }
+        nav ul{
+            padding-top: 10px;
+            padding-left: 7px;
+            padding-right: 7px;
+            list-style: none;
+        }
+        ul li a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            background-color: #a7bfe8;
+            border: 1px solid #ee9ca7;
+            text-align: center;
+        }
+           ul li a:hover{/*鼠标悬浮时的样式*/
+            border-left: 5px solid yellow;
+            background-color: rgb(70, 70, 214);
+        }
+		.center{
+			border: 1px solid red;
+			width: 400px;
+			height: 500px;
+			margin-top: 30px;
+			margin-left: 5px;
+			margin-right: 50px; 
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.qq1{
+			width: 31px;
+			height: 35px;
+			background: url("../images/jiangyanhui/qq.jpg");
+			background-size:cover;
+			margin: 0 auto;
+				
+		}	
+		.qq1:hover{
+			 background: url("../images/jiangyanhui/ma.png");
+			width: 200px;
+			height: 400px;
+			background-size: cover;
+		}
+		.right{
+			
+			width: 200px;
+			height: 500px;
+			margin-top: 30px;
+			margin-left: 50px;
+			margin-right: 50px;
+			
+		}
+		
+        footer{
+            font-size: 9pt;
+            color: #999;
+            text-align: center;
+            width: 90%;
+            border-top: 1px solid #ccc;
+            margin-left: 37px;
+			position: absolute;
+			bottom: 0;
+        }
+        
+    </style>
+</head>
+<body>
+	<div class="top">
+			<a href="../index.html#header">首页</a>
+			<a href="#">标签</a>
+			<a href="#">分类</a>
+			<a href="#">归档</a>
+			<a href="#">留言板</a>
+			<a href="http://www.baidu.com">友情连接</a>
+			<a href="wangwenlong.html">合伙人王文龙</a>
+		<div id="jiang">
+				蒋彦辉
+			</div>
+	</div>
+	
+	<div class="zhongjian">
+    <div class="left">
+		<div >
+			<p>最近更新</p>
+			<hr>
+		</div>
+        <nav>
+            <ul>
+                <li><a href="#">周炜的小床帘</a></li>
+                <li><a href="#">周炜的剃须刀</a></li>
+                <li><a href="#">周炜的小镜子</a></li>
+                <li><a href="#">周炜的吹风机</a></li>
+                <li><a href="#">周炜的热水瓶</a></li>
+                <li><a href="#">周炜的女朋友</a></li>
+            </ul>
+        </nav>
+        </div>
+		<div class="center">
+			<h3>
+				我的名片
+			</h3>
+			<hr>
+			<p>
+				姓名：蒋彦辉
+			</p>
+			<p>
+				职业：在校大学生
+			</p>
+			<p>
+				地址：上海
+			</p>
+			<p>
+				Email:2361519857@qq.com
+			</p>
+			<p>
+				QQ:2361519857
+			</p>
+			<p class="qq1" title="QQ">
+			</p>
+		</div>
+		<div class="right">
+			<img src="../images/jiangyanhui/ziyou.jpg" width="200px" height="427px" title="自由" alt=""/>
+		</div>
+	</div>
+	<div class="yj">
+		<footer>&copy;2019121206蒋彦辉</footer>    <!--页脚-->
+	</div>
+    
+		
+</body>
+</html>

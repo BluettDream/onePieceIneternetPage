@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>这里注册</title>
+<link href="../css/registered.css" rel="stylesheet"/>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <ul class="felem">
+            <li>用户名：<input type="text" name="comments" size="15" required placeholder="搁这打上名儿"/></li>
+            <li>密码：<input name="passwd" type="password" size="15" required/></li>
+            <li>所在地：
+                <select name="addr">
+                    <option value="1">辽宁</option>
+                    <option value="2">黑龙江</option>
+                    <option value="3">吉林</option>
+					<option value="4">东北</option>
+                </select>
+            </li>
+            <li>
+                <span style="vertical-align: top">个性签名：</span>
+                <textarea name="sign" cols="20" rows="4" required placeholder="快给我写点儿东西"></textarea>
+            </li>
+            <li><button class="submit" type="submit">立即注册</button></li>
+        </ul>
+    </form>
+</body>
+</html>

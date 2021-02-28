@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <style>
+        body{
+            display: flex;  /*开启弹性盒子布局*/ 
+            flex-flow: row; /*纵向方向排列*/
+            justify-content: center; /*项目横向居中排列*/
+            align-items: center; /*项目纵向居中排列*/
+            padding: 0;
+            margin: 0;
+        }
+        .left{
+            width: 140px;
+            height: 810px;
+            background-color:antiquewhite;
+        }
+        nav{
+            margin-top: 150px;
+            background-color:#E15B5D;
+            height: 160px;
+        }
+        nav ul{
+            padding-top: 10px;
+            padding-left: 7px;
+            padding-right: 7px;
+            list-style: none;
+        }
+        ul li a{
+            display: block;
+            color: grey;
+            text-decoration: none;
+            background-color:pink;
+            border: 1px solid red;
+            text-align: center;
+		}
+        ul li a:hover{
+            border-left: 5px solid green;
+            background-color:aqua;
+        }
+        .right{
+            margin-left: 25px;
+            width: 800px;
+            display: flex;
+            flex-flow: column; /*竖向排列*/
+        }
+        header{
+            display: flex;
+            flex-flow: column;
+        }
+        header .top img{
+            width: 800px;
+            height: 150px;
+        }
+        header .jbs{
+            width: 100%;
+            height: 80px;
+            background-color: chartreuse;
+            background-image: linear-gradient(to top,green white);
+        }
+		#nav{font-size: 14px;}
+		#nav a{
+			color: red;background-color: #9CF;
+			text-align: center;text-decoration: none;
+			padding: 6px 10px 4px;border: 1px solid #39F;
+			float: left;
+		}
+		#nav a+a{margin-left: 5px;}
+		#nav a:hover{color: white;background-color: #930;}/*鼠标悬浮时的样式*/
+        header section p{
+            text-indent: 2em;
+            font-size: 15px;
+        }
+        header section img{
+            float: right;
+            width: 300px;
+            height: 170px;
+        }
+        footer{
+            font-size: 9pt;
+            color: #999;
+            text-align: center;
+            width: 90%;
+            border-top: 1px solid #ccc;
+            margin-left: 37px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <nav>
+            <ul>
+				<li><a href="#">此处点不开</a></li>
+                <li><a href="#">不能点开</a></li>
+                <li><a href="#">打不了</a></li>
+                <li><a href="#">我说打不开</a></li>
+                <li><a href="#">就是打不开</a></li>
+                <li><a href="#">你能打你牛</a></li>
+            </ul>
+        </nav><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+		<table border="1" cellpadding="0" cellspacing="0"> 
+			<tr><td align="center" >满意吗</td><td>满意吗</td><td>满意吗</td></tr>
+		<tr><td>满意</td><td>不满意</td><td>还行吧</td></tr>
+		</table>         
+<!--		表格-->
+    </div>
+    <div class="right">
+        <header>
+            <div class="top">
+                <img src="../images/wangwenlong/海绵宝宝.png"/>
+            </div>
+			<div id="nav">
+			 <a href="../index.html">首页</a>
+			 <a href="tiaozhuan.html">中心简介</a>
+			 <a href="tiaozhuan.html">政策法规</a>
+			 <a href="tiaozhuan.html">常用下载</a>
+			 <a href="tiaozhuan.html">为您服务</a>
+			 <a href="tiaozhuan.html">注册一个吧</a>
+			 <a href="tiaozhuan.html">求你了</a>
+			 <a href="tiaozhuan.html">就一个</a>
+			 <a href="tiaozhuan.html">注册一个吧 我的妈呀 啊</a></div>
+            <section>
+                <p>深圳市腾讯计算机系统有限公司成立于1998年11月 ，由马化腾、张志东、许晨晔、陈一丹、曾李青五位创始人共同创立。 是中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一.</p>
+                <img src="../images/wangwenlong/5.png"/>
+                <p>腾讯多元化的服务包括:社交和通信服务QQ及微信/WeChat、社交网络平台QQ空间、腾讯游戏旗下QQ游戏平台、门户网站腾讯网、腾讯新闻客户端和网络视频服务腾讯视频等。2020年6月29日，裁判文书网一份裁判文书显示，腾讯请求查封老干妈1624万财产，法院裁定同意。腾讯回应称系因老干妈拖欠千万元广告费，腾讯多次催促对方付款却分文未获，遂起诉老干妈，目前案件在法院具体审理过程中 。案件反转贵阳警方：系3人伪造老干妈印章与腾讯签订合同 已被刑拘，案件正在进一步办理中。7月10日，腾讯公司发布声明与老干妈握手言和：已撤诉，未来将展开合作。</p>
+                <p>1999年11月，QQ用户注册数达100万。
+
+2000年4月，QQ用户注册数达500万。
+
+2000年6月，QQ注册用户数破千万，"移动QQ"进入联通"移动新生活"。
+
+2001年1月31日，NetValue宣布了亚洲五个国家和地区的互联网网站及实体的排名，包括中国香港特区、韩国、新加坡、中国台湾地区和中国大陆的数据，腾讯网在中国排名第6。
+
+2001年2月，腾讯QQ注册用户数已增至5000万用户。</p>
+                <p>2002年3月，QQ注册用户数突破1亿大关。
+
+2002年7月，倡导行业自律，签署《中国互联网行业自律公约》。
+
+2003年8月，推出的"QQ游戏"再度引领互联网娱乐体验。9月，QQ用户注册数升到2亿。
+
+2003年9月9日，在北京嘉里中心隆重宣布推出企业级实时通信产品"腾讯通"(RTX)，标志着腾讯公司进军企业市场，作为中国第一家企业实时通信服务商。
+
+2003年12月，腾讯一款最新的即时通讯软件--TencentMessenger(简称腾讯TM)对外发布，提供办公环境中和熟识朋友即时沟通的网友下载使用。</p>
+				<p>2004年4月，QQ注册用户数再创高峰，突破3亿大关。
+
+2004年6月16日，腾讯控股在香港联合交易所主板正式挂牌，股份代号700。是第一家在香港主板上市的中国互联网企业。腾讯公司在香港联交所主板公开上市(股票代号00700)，是香港恒生指数成分股之一，董事会主席兼首席执行官是马化腾。
+
+2004年8月27日，腾讯QQ游戏的最高同时在线突破了62万人。标志着QQ游戏成为国内最大和世界领先的休闲游戏门户。
+
+2004年10月22日，在"2004中国商业网站100强"大型调查中，腾讯网得票率名列第一，领先于新浪、搜狐、网易等门户。同时，腾讯网还被评为中国"市值最大5佳网站"之一。
+
+2004年12月，QQ游戏最高同时在线突破100万。截止2004年12月，腾讯公司已独立开发出近30项拥有著作权的软件产品。</p>
+            </section>
+        </header>
+        <footer><a href="../index.html">友情链接<!--页脚--></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:wwl@qq.com">联系我们</a><br>
+&copy;&nbsp;姓名：王文龙&nbsp;&nbsp;&nbsp;学号：2019121219</footer>
+    </div>
+</body>
+</html>

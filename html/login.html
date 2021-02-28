@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登陆在这</title>
+<link href="../css/wwl.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="loginbox">
+    <div class="head">     <!--登陆界面头部-->     
+        <a id="goBack" href="javascript:history.go(-1);" class="left-btn head-btn">返回</a>
+        <a id="menu" href="javascript:void(0)" class="right-btn head-btn"></a>
+        <h1 class="">会员登录</h1>
+    </div>
+    <div class="lgbody">   <!--登陆界面主体-->
+        <form action="#" class="listForm" method="post">
+            <div class="userzone" id="selectBank">     <!--第一个文本框-->
+                <span class="username"></span>
+                <span class="fRight"><input class="opa" name="LoginName" id="name" placeholder="请输入您的手机号" type="text" value=""/></span>
+            </div>
+            <div class="pwdzone" style="position: relative;">   <!--密码框-->
+                <span class="password"></span>
+                <span class="fRight"><input class="opa" name="Passwd" id="pass" placeholder="密码（6-18位数字和字母组合）" type="password"/></span>
+            </div>
+            <div class="col_div">             <!--登陆按钮-->
+                <button type="submit" class="btn btn-blue" title="会员登录">登录</button>
+            </div>
+            <div class="log_ele clear">
+                <a href="registered.html">免费注册</a>
+                <a href="#">忘记密码</a>
+            </div>
+        </form>
+    </div>         <!--lgbody-->
+    <div class="lgfoot">       <!--登陆界面底部-->
+        <nav>
+			<a href="#">登录</a>
+            <a href="registered.html">注册</a>
+            <a href="wangwenlong.html">回首页</a>      <!--超链接-->
+        </nav>
+      <p>&copy;2019121219王文龙</p>
+    </div>
+</div>
+</body>
+</html>

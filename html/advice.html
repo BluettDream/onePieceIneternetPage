@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>建议</title>
+<link rel="icon" href="../logo.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="../logo.ico" type="image/x-icon"/>
+<link href="../css/advice.css" rel="stylesheet"/>
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0">
+    <!--第一行中放入头部标签-->
+    <tr>
+    <!--设置头部跨五列单元格，占满网页宽度-->
+    <td colspan="5">
+    <header id="header">
+    <div class="logo">
+        <img src="../images/logo.png" alt="" title="onepiece"/>
+    </div>
+    <div class="music">
+        <audio id="audio" src="../music/audio.mp3" loop controls title="音乐播放"></audio>
+    </div>
+    <nav>
+        <ul>
+            <li><div>首页</div><div><a href="../index.html#header">首页</a></div></li>
+            <li><div>成员一览</div><div><a href="../index.html#s2">成员一览</a></div></li>
+            <li><div>通缉令</div><div><a href="../index.html#s3">通缉令</a></div></li>
+            <li><div>建议</div><div><a href="advice.html">建议</a></div></li>
+            <li><div>合作伙伴</div><div><ul class="coopUser">合作伙伴<li><a href="wangwenlong.html">王文龙</a></li><li><a href="jiangyanhui.html">蒋彦辉</a></li></ul></div></li>
+        </ul>
+    </nav>
+     </header>
+    </td>
+    </tr> 
+    <!--第二行中放入标题-->
+    <tr>
+        <!--设置标题单元格跨三列居中，前后单元格设置宽度200-->
+        <td width="200"></td>
+        <td colspan="3" class="firsttr">每个人都是我们一起征程大海的最好的伙伴，希望您可以提供优质的建议给我们，感谢！</td>
+        <td width="200"></td>
+    </tr>
+    <!--第三行中放入视频与表单-->
+    <tr>
+        <!--设置视频跨三列单元格-->
+        <td colspan="3">
+            <div class="movie">
+                <video src="../movie/sp2.avi" controls poster="../images/show(2).png"></video>
+            </div>
+        </td>
+        <!--设置表单跨两列单元格-->
+        <td colspan="2">
+            <div id="biao">
+            <form action="login.php" method="post" autocomplete="on">
+                <p>用户：<input name="user" type="text" value="请输入合法名称" onFocus="this.value=''" size="15" required/></p>
+                <p>密码：<input name="pw" type="password" placeholder="请输入密码" size="15" pattern="^[a-zA-Z]\w{5,7}$" required/></p>
+                <p>邮箱：<input name="mail" type="email" placeholder="请输入你的邮箱" size="15" required autocomplete="off"/></p>
+                <p>性别:
+                    <label for="male">男：</label><input name="sex" type="radio" value="1" id="male"/>
+                    <label for="female">女：</label><input name="sex" type="radio" value="2" id="female"/>
+                </p>
+                <p>职业：<input type="text" id="zhiye" list="career"/>
+                    <datalist id="career">
+                        <option value="学生"></option>
+                        <option value="无业"></option>
+                        <option value="在职"></option>
+                    </datalist>
+                </p>
+                <p>年龄：
+                    <input type="number" name="nl" size="4" min="1" max="25" step="1" placeholder="1-25岁"/>
+                </p>
+                <p>出生日期：<input type="date" name="birth" size="4"/></p>
+                <p>爱好：
+                    <input name="fav1" type="checkbox" value="1"/>跳舞
+                    <input name="fav1" type="checkbox" value="1"/>跑步
+                    <input name="fav1" type="checkbox" value="1"/>唱歌
+                </p>
+                <p><input name="upfile[]" type="file" multiple/></p>
+                <p>所在地：
+                    <select name="addr">
+                        <option value="1">安徽</option>
+                        <option value="2">上海</option>
+                        <option value="3">山西</option>
+                    </select>
+                </p>
+                <p>你的建议（100字以内）：<br>
+                    <textarea name="advice" cols="25" rows="4" wrap="physical" placeholder="在此处发表你的意见"></textarea>
+                </p>
+                <p>
+                <input type="image" src="../images/1.jpg" width="120" height="30" alt="这是提交按钮"/>
+                </p>
+            </form>
+            </div>
+        </td>
+    </tr>
+    <!--第四行中放入网页尾部信息-->
+    <tr>
+    <!--设置尾部跨五列单元格，占满网页宽度-->
+    <td colspan="5">
+    <footer>
+    <div class="chlj">
+        <a href="http://www.baidu.com" target="_blank">友情链接</a>
+        <a href="mailto:907749695@qq.com">联系我们</a>
+    </div>
+    <hr>
+    <div class="bq">&copy;191互联2班2019121218田梦豪</div>
+    </footer>
+    </td>
+    </tr>
+</table>
+</body>
+</html>

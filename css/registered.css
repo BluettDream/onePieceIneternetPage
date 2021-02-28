@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    background:url("../images/wangwenlong/7.png")no-repeat;
+    background-size: cover;
+}
+ul{
+    list-style: none;
+    margin: 0px;
+}
+form{
+    border: 1px dotted #FA770D;
+    padding: 1px 6px;
+    margin: 0px;
+    font: 14px Arial;
+    margin-top: 100px;
+}
+.felem li{
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+	color: #EE0ABB;
+}
+.felem li input{
+    height: 20px;
+    width: 220px;
+    padding: 5px 8px;
+}
+.felem li select{
+    font-size: 14px;
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+.felem li input,.felem li textarea{
+    background: url("../images/wangwenlong/attention.png") no-repeat #fff 98%center;
+    border: 1px solid #aaa;
+    width: 200px;
+    box-shadow: 0px 0px 3px #ccc,0 10px 15px #eee inset;
+    border-radius: 2px;
+    transition: padding .25s;
+}
+.felem li input:focus,.felem li textarea:focus{/*当该元素获得焦点时*/
+    background: #fff;
+    border: 1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+    padding-right: 70px;
+}
+button.submit{
+    background-color: #68b12f;
+    margin-left: 100px;
+    background: linear-gradient(top,#68b12f,#50911e);
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    box-shadow: inset 0 1px 0 0 #9fd574;/*设置向下1px的#9fd574色的内阴影*/
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+button.submit:hover{
+    opacity: .85;
+    cursor: pointer;
+}
+button.submit:active{
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset;
+}
+.felem li input:focus:invalid,.felem li textarea:focus:invalid{
+    background: url("../images/wangwenlong/warn.png") no-repeat #fff 98%center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+.felem li input:required:valid,.felem li textarea:required:valid{
+    background: url("../images/wangwenlong/right.png") no-repeat #fff 98%center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+
+
+
+
+
